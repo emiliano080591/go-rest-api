@@ -10,3 +10,9 @@ type Product struct {
 	ListPrice    float64 `json:"listPrice"`
 	Category     string  `json:"category"`
 }
+
+/*ProductsList es el arreglo que se va enviar de los productos*/
+type ProductsList struct {
+	Data         []*Product `json:"data"`
+	TotalRecords int        `json:"totalRecords"`
+}
